@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>按规律出数字</title>
+    <script src="jquery-1.9.0.min.js"></script>
+    <style>
+       .tzc_cp{
+           width: 100%;
+           height: 300px;
+           font-size: 65px;
+           line-height: 300px;
+           color: white;
+           background: rgba(57, 206, 252, 0.699);
+           font-weight: 600;
+           text-align: center;
+           margin: 0 auto;
+       }
+       #tzc_button{
+           width: 300px;
+           height: 50px;
+           background: red;
+           color: white;
+           font-weight: 600;
+           font-size: 30px;
+           line-height: 50px;
+           text-align: center;
+           position: fixed;
+           left: 50%;
+           top: 50%;
+           transform: translate(-50%,-50%);
+       }
+    </style>
+</head>
+<body>
+    <div class="tzc_cp">机选彩票号码出票</div>
+    <button id="tzc_button">出票</button>
+    <script>
+        //js简单实现彩票按规律出票
+        function lottery() {
+            var arr_cs=[];
+            var j_cs=Math.floor(Math.random()*14+1); 
+            for (let i = 0; i < 6; i++) {
+                var i_cs=Math.floor(Math.random()*30+1);
+                arr_cs.push(i_cs); 
+            } 
+            $(".tzc_cp").html(arr_cs+"+"+j_cs);
+        }
+        $("#tzc_button").on("click",function(){
+            lottery();
+        })
+    </script>
+</body>
+</html>
