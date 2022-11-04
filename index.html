@@ -1,55 +1,61 @@
+<!DOCTYPE html>
 <html lang="en">
+
+<html>
+<!DOCTYPE html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>按规律出数字</title>
-    <script src="jquery-1.9.0.min.js"></script>
-    <style>
-       .tzc_cp{
-           width: 100%;
-           height: 300px;
-           font-size: 65px;
-           line-height: 300px;
-           color: white;
-           background: rgba(57, 206, 252, 0.699);
-           font-weight: 600;
-           text-align: center;
-           margin: 0 auto;
-       }
-       #tzc_button{
-           width: 300px;
-           height: 50px;
-           background: red;
-           color: white;
-           font-weight: 600;
-           font-size: 30px;
-           line-height: 50px;
-           text-align: center;
-           position: fixed;
-           left: 50%;
-           top: 50%;
-           transform: translate(-50%,-50%);
-       }
-    </style>
+    <title>2022</title>
+    <link rel="stylesheet" href="https://stackedit.io/style.css" />
 </head>
+
+<body class="stackedit" background = "背景图1.jpg">
+<embed src="未来.mp3" hidden="true" autostart="true" loop="true">
+<div class="stackedit__html"><h1><a id="_0"></a><strong>个人的基本情况</strong></h1>
+    <ul>
+        <img src = "我的照片.jpg" width="180" height="230" align = "right">
+        <li>姓名：晏健</li>
+        <li>学院：软件动漫</li>
+        <li>爱好 </li>
+
+    </ul>
+    <br>
+    <h1><a id="_9"></a><strong>教育经历</strong></h1>
+    <p>20计算机<br>
+        <br></p>
+    <h1><a id="_14"></a><strong>兴趣爱好</strong></h1>
+    <ul>
+        <li>算法</li>
+        <li>运动</li>
+        <li>游戏</li>
+    </ul>
+</div>
+</body>
+
+</html>
+
+
+<frameset cols="250,*">
+
+    <frame src="导航.html">
+    <frame src="晏健的简介.html" name="showframe">
+
+</frameset>
+
+</html>
+
+
+<html>
+
 <body>
-    <div class="tzc_cp">机选彩票号码出票</div>
-    <button id="tzc_button">出票</button>
-    <script>
-        //js简单实现彩票按规律出票
-        function lottery() {
-            var arr_cs=[];
-            var j_cs=Math.floor(Math.random()*14+1); 
-            for (let i = 0; i < 6; i++) {
-                var i_cs=Math.floor(Math.random()*30+1);
-                arr_cs.push(i_cs); 
-            } 
-            $(".tzc_cp").html(arr_cs+"+"+j_cs);
-        }
-        $("#tzc_button").on("click",function(){
-            lottery();
-        })
-    </script>
+
+<a href="晏健的简介.html" target="showframe">个人简介</a><br/>
+<a href="未来规划.html" target="showframe"> 未来规划</a><br>
+<a href="我的作业.html" target="showframe">我的作业</a><br>
+
+
 </body>
 </html>
